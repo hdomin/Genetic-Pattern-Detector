@@ -1,0 +1,1 @@
+python harvestSequence.py pattern.txt /home/appuser/aln out.txt
