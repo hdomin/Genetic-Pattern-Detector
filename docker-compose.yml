@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/home/appuser/app
+      - ./aln:/home/appuser/aln
+    command: ["tail", "-f", "/dev/null"] 
